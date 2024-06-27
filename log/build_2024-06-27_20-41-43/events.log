@@ -1,0 +1,254 @@
+[0.000000] (-) TimerEvent: {}
+[0.000804] (-) JobUnselected: {'identifier': 'overlord100_msgs'}
+[0.001176] (overlord100_controller) JobQueued: {'identifier': 'overlord100_controller', 'dependencies': OrderedDict([('overlord100_msgs', '/home/ws/src/Overlord100-controller/install/overlord100_msgs')])}
+[0.001281] (overlord100_controller) JobStarted: {'identifier': 'overlord100_controller'}
+[0.020890] (overlord100_controller) JobProgress: {'identifier': 'overlord100_controller', 'progress': 'cmake'}
+[0.021300] (overlord100_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/ws/src/Overlord100-controller/overlord100_controller', '-DCMAKE_INSTALL_PREFIX=/home/ws/src/Overlord100-controller/install/overlord100_controller'], 'cwd': '/home/ws/src/Overlord100-controller/build/overlord100_controller', 'env': OrderedDict([('HOSTNAME', 'ekaterina-VivoBook'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/bin/helpers/browser.sh'), ('HOME', '/home/mobile'), ('OLDPWD', '/home/ws/src'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2587e38c-8b8d-4489-b011-d0068234d60b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-3699188a-a962-4b28-a4df-0b83e1c53642.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-f25f7402-b87a-42ec-977a-c86095d35e78.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/mobile/.local/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-f25f7402-b87a-42ec-977a-c86095d35e78.sock","/tmp/.X11-unix/X3","/home/mobile/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-55cfcb7893.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-f25f7402-b87a-42ec-977a-c86095d35e78.sock'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'LOCALHOST'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/src/Overlord100-controller/build/overlord100_controller'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099692] (-) TimerEvent: {}
+[0.119487] (overlord100_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199835] (-) TimerEvent: {}
+[0.208279] (overlord100_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.221926] (overlord100_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299949] (-) TimerEvent: {}
+[0.348206] (overlord100_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.360673] (overlord100_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.361341] (overlord100_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.361775] (overlord100_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.365956] (overlord100_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400072] (-) TimerEvent: {}
+[0.499003] (overlord100_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.500150] (-) TimerEvent: {}
+[0.509919] (overlord100_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.510224] (overlord100_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.510897] (overlord100_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.519116] (overlord100_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600286] (-) TimerEvent: {}
+[0.700620] (-) TimerEvent: {}
+[0.755298] (overlord100_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.800725] (-) TimerEvent: {}
+[0.901065] (-) TimerEvent: {}
+[0.968197] (overlord100_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.001189] (-) TimerEvent: {}
+[1.069771] (overlord100_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.082920] (overlord100_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.099897] (overlord100_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.101269] (-) TimerEvent: {}
+[1.125258] (overlord100_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.162142] (overlord100_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.201402] (-) TimerEvent: {}
+[1.298714] (overlord100_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.301480] (-) TimerEvent: {}
+[1.305763] (overlord100_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.401609] (-) TimerEvent: {}
+[1.502003] (-) TimerEvent: {}
+[1.527942] (overlord100_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.586387] (overlord100_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.602109] (-) TimerEvent: {}
+[1.680872] (overlord100_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.702237] (-) TimerEvent: {}
+[1.707710] (overlord100_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.802351] (-) TimerEvent: {}
+[1.856187] (overlord100_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.856851] (overlord100_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.902470] (-) TimerEvent: {}
+[2.002755] (overlord100_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.002987] (-) TimerEvent: {}
+[2.004656] (overlord100_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.103127] (-) TimerEvent: {}
+[2.203592] (-) TimerEvent: {}
+[2.249531] (overlord100_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.303715] (-) TimerEvent: {}
+[2.307531] (overlord100_controller) StdoutLine: {'line': b'-- Found overlord100_msgs: 0.0.0 (/home/ws/src/Overlord100-controller/install/overlord100_msgs/share/overlord100_msgs/cmake)\n'}
+[2.334592] (overlord100_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.403823] (-) TimerEvent: {}
+[2.477198] (overlord100_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.477675] (overlord100_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.477950] (overlord100_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.479091] (overlord100_controller) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.481614] (overlord100_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.483178] (overlord100_controller) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.491630] (overlord100_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.492008] (overlord100_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.493331] (overlord100_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.495091] (overlord100_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.503964] (-) TimerEvent: {}
+[2.525267] (overlord100_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[2.528010] (overlord100_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/ws/src/Overlord100-controller/build/overlord100_controller\n'}
+[2.543711] (overlord100_controller) CommandEnded: {'returncode': 0}
+[2.546716] (overlord100_controller) JobProgress: {'identifier': 'overlord100_controller', 'progress': 'build'}
+[2.547052] (overlord100_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ws/src/Overlord100-controller/build/overlord100_controller', '--', '-j8', '-l8'], 'cwd': '/home/ws/src/Overlord100-controller/build/overlord100_controller', 'env': OrderedDict([('HOSTNAME', 'ekaterina-VivoBook'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/bin/helpers/browser.sh'), ('HOME', '/home/mobile'), ('OLDPWD', '/home/ws/src'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2587e38c-8b8d-4489-b011-d0068234d60b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-3699188a-a962-4b28-a4df-0b83e1c53642.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-f25f7402-b87a-42ec-977a-c86095d35e78.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/mobile/.local/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-f25f7402-b87a-42ec-977a-c86095d35e78.sock","/tmp/.X11-unix/X3","/home/mobile/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-55cfcb7893.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-f25f7402-b87a-42ec-977a-c86095d35e78.sock'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'LOCALHOST'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/src/Overlord100-controller/build/overlord100_controller'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs:/opt/ros/humble')]), 'shell': False}
+[2.604084] (-) TimerEvent: {}
+[2.636983] (overlord100_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/controller_subscriber.dir/src/controller_subscriber.cpp.o\x1b[0m\n'}
+[2.637259] (overlord100_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/controller.cpp.o\x1b[0m\n'}
+[2.637385] (overlord100_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cmd_vel_publisher.dir/src/cmd_vel_publisher.cpp.o\x1b[0m\n'}
+[2.704207] (-) TimerEvent: {}
+[2.804625] (-) TimerEvent: {}
+[2.905155] (-) TimerEvent: {}
+[3.005586] (-) TimerEvent: {}
+[3.105984] (-) TimerEvent: {}
+[3.206424] (-) TimerEvent: {}
+[3.307032] (-) TimerEvent: {}
+[3.407490] (-) TimerEvent: {}
+[3.507928] (-) TimerEvent: {}
+[3.608496] (-) TimerEvent: {}
+[3.709001] (-) TimerEvent: {}
+[3.809451] (-) TimerEvent: {}
+[3.909847] (-) TimerEvent: {}
+[4.010267] (-) TimerEvent: {}
+[4.110732] (-) TimerEvent: {}
+[4.211176] (-) TimerEvent: {}
+[4.311599] (-) TimerEvent: {}
+[4.412033] (-) TimerEvent: {}
+[4.512492] (-) TimerEvent: {}
+[4.612946] (-) TimerEvent: {}
+[4.713441] (-) TimerEvent: {}
+[4.813875] (-) TimerEvent: {}
+[4.914397] (-) TimerEvent: {}
+[5.014827] (-) TimerEvent: {}
+[5.115284] (-) TimerEvent: {}
+[5.215763] (-) TimerEvent: {}
+[5.316299] (-) TimerEvent: {}
+[5.416718] (-) TimerEvent: {}
+[5.517204] (-) TimerEvent: {}
+[5.617677] (-) TimerEvent: {}
+[5.718134] (-) TimerEvent: {}
+[5.818561] (-) TimerEvent: {}
+[5.919030] (-) TimerEvent: {}
+[6.019474] (-) TimerEvent: {}
+[6.119943] (-) TimerEvent: {}
+[6.220373] (-) TimerEvent: {}
+[6.320826] (-) TimerEvent: {}
+[6.421297] (-) TimerEvent: {}
+[6.521739] (-) TimerEvent: {}
+[6.622296] (-) TimerEvent: {}
+[6.722727] (-) TimerEvent: {}
+[6.823146] (-) TimerEvent: {}
+[6.923613] (-) TimerEvent: {}
+[7.024045] (-) TimerEvent: {}
+[7.124487] (-) TimerEvent: {}
+[7.224921] (-) TimerEvent: {}
+[7.325407] (-) TimerEvent: {}
+[7.425862] (-) TimerEvent: {}
+[7.526242] (-) TimerEvent: {}
+[7.627636] (-) TimerEvent: {}
+[7.728689] (-) TimerEvent: {}
+[7.829125] (-) TimerEvent: {}
+[7.929563] (-) TimerEvent: {}
+[8.032300] (-) TimerEvent: {}
+[8.132730] (-) TimerEvent: {}
+[8.233132] (-) TimerEvent: {}
+[8.333515] (-) TimerEvent: {}
+[8.433909] (-) TimerEvent: {}
+[8.534337] (-) TimerEvent: {}
+[8.634736] (-) TimerEvent: {}
+[8.735159] (-) TimerEvent: {}
+[8.835596] (-) TimerEvent: {}
+[8.936085] (-) TimerEvent: {}
+[9.036546] (-) TimerEvent: {}
+[9.136975] (-) TimerEvent: {}
+[9.237524] (-) TimerEvent: {}
+[9.338101] (-) TimerEvent: {}
+[9.438549] (-) TimerEvent: {}
+[9.538978] (-) TimerEvent: {}
+[9.639388] (-) TimerEvent: {}
+[9.739872] (-) TimerEvent: {}
+[9.794962] (overlord100_controller) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable cmd_vel_publisher\x1b[0m\n'}
+[9.840004] (-) TimerEvent: {}
+[9.941046] (-) TimerEvent: {}
+[10.041661] (-) TimerEvent: {}
+[10.142187] (-) TimerEvent: {}
+[10.242618] (-) TimerEvent: {}
+[10.343053] (-) TimerEvent: {}
+[10.375492] (overlord100_controller) StdoutLine: {'line': b'[ 66%] Built target cmd_vel_publisher\n'}
+[10.443188] (-) TimerEvent: {}
+[10.543610] (-) TimerEvent: {}
+[10.644001] (-) TimerEvent: {}
+[10.744421] (-) TimerEvent: {}
+[10.844841] (-) TimerEvent: {}
+[10.945287] (-) TimerEvent: {}
+[11.045677] (-) TimerEvent: {}
+[11.146109] (-) TimerEvent: {}
+[11.246497] (-) TimerEvent: {}
+[11.346871] (-) TimerEvent: {}
+[11.447254] (-) TimerEvent: {}
+[11.547638] (-) TimerEvent: {}
+[11.648005] (-) TimerEvent: {}
+[11.748368] (-) TimerEvent: {}
+[11.848771] (-) TimerEvent: {}
+[11.949160] (-) TimerEvent: {}
+[12.049548] (-) TimerEvent: {}
+[12.149957] (-) TimerEvent: {}
+[12.250353] (-) TimerEvent: {}
+[12.350752] (-) TimerEvent: {}
+[12.451126] (-) TimerEvent: {}
+[12.551499] (-) TimerEvent: {}
+[12.651881] (-) TimerEvent: {}
+[12.752330] (-) TimerEvent: {}
+[12.852774] (-) TimerEvent: {}
+[12.953225] (-) TimerEvent: {}
+[13.053638] (-) TimerEvent: {}
+[13.154038] (-) TimerEvent: {}
+[13.254414] (-) TimerEvent: {}
+[13.354837] (-) TimerEvent: {}
+[13.455276] (-) TimerEvent: {}
+[13.555677] (-) TimerEvent: {}
+[13.656093] (-) TimerEvent: {}
+[13.756585] (-) TimerEvent: {}
+[13.856993] (-) TimerEvent: {}
+[13.957411] (-) TimerEvent: {}
+[14.057805] (-) TimerEvent: {}
+[14.158253] (-) TimerEvent: {}
+[14.258718] (-) TimerEvent: {}
+[14.359163] (-) TimerEvent: {}
+[14.459616] (-) TimerEvent: {}
+[14.560064] (-) TimerEvent: {}
+[14.660570] (-) TimerEvent: {}
+[14.761058] (-) TimerEvent: {}
+[14.861552] (-) TimerEvent: {}
+[14.943487] (overlord100_controller) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable controller_subscriber\x1b[0m\n'}
+[14.961665] (-) TimerEvent: {}
+[15.062086] (-) TimerEvent: {}
+[15.162666] (-) TimerEvent: {}
+[15.263145] (-) TimerEvent: {}
+[15.363725] (-) TimerEvent: {}
+[15.415326] (overlord100_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable diff_drive_controller\x1b[0m\n'}
+[15.463871] (-) TimerEvent: {}
+[15.564404] (-) TimerEvent: {}
+[15.665022] (-) TimerEvent: {}
+[15.765559] (-) TimerEvent: {}
+[15.792759] (overlord100_controller) StdoutLine: {'line': b'[100%] Built target controller_subscriber\n'}
+[15.865686] (-) TimerEvent: {}
+[15.966127] (-) TimerEvent: {}
+[16.066554] (-) TimerEvent: {}
+[16.167001] (-) TimerEvent: {}
+[16.194861] (overlord100_controller) StdoutLine: {'line': b'[100%] Built target diff_drive_controller\n'}
+[16.220430] (overlord100_controller) CommandEnded: {'returncode': 0}
+[16.267101] (-) TimerEvent: {}
+[16.283818] (overlord100_controller) JobProgress: {'identifier': 'overlord100_controller', 'progress': 'install'}
+[16.301169] (overlord100_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ws/src/Overlord100-controller/build/overlord100_controller'], 'cwd': '/home/ws/src/Overlord100-controller/build/overlord100_controller', 'env': OrderedDict([('HOSTNAME', 'ekaterina-VivoBook'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/bin/helpers/browser.sh'), ('HOME', '/home/mobile'), ('OLDPWD', '/home/ws/src'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2587e38c-8b8d-4489-b011-d0068234d60b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-3699188a-a962-4b28-a4df-0b83e1c53642.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-f25f7402-b87a-42ec-977a-c86095d35e78.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/vscode/vscode-server/bin/linux-x64/5437499feb04f7a586f677b155b039bc2b3669eb/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/mobile/.local/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-f25f7402-b87a-42ec-977a-c86095d35e78.sock","/tmp/.X11-unix/X3","/home/mobile/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-55cfcb7893.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-f25f7402-b87a-42ec-977a-c86095d35e78.sock'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X3'), ('SHELL', '/bin/bash'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'LOCALHOST'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ws/src/Overlord100-controller/build/overlord100_controller'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ws/src/Overlord100-controller/install/overlord100_msgs:/opt/ros/humble')]), 'shell': False}
+[16.316418] (overlord100_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.316878] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/lib/overlord100_controller/diff_drive_controller\n'}
+[16.323284] (overlord100_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/src/Overlord100-controller/install/overlord100_controller/lib/overlord100_controller/diff_drive_controller" to ""\n'}
+[16.323613] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/lib/overlord100_controller/controller_subscriber\n'}
+[16.329391] (overlord100_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/src/Overlord100-controller/install/overlord100_controller/lib/overlord100_controller/controller_subscriber" to ""\n'}
+[16.329784] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/lib/overlord100_controller/cmd_vel_publisher\n'}
+[16.331794] (overlord100_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/ws/src/Overlord100-controller/install/overlord100_controller/lib/overlord100_controller/cmd_vel_publisher" to ""\n'}
+[16.332140] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/ament_index/resource_index/package_run_dependencies/overlord100_controller\n'}
+[16.332896] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/ament_index/resource_index/parent_prefix_path/overlord100_controller\n'}
+[16.335182] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/environment/ament_prefix_path.sh\n'}
+[16.335535] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/environment/ament_prefix_path.dsv\n'}
+[16.335896] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/environment/path.sh\n'}
+[16.336278] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/environment/path.dsv\n'}
+[16.336630] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/local_setup.bash\n'}
+[16.336978] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/local_setup.sh\n'}
+[16.337368] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/local_setup.zsh\n'}
+[16.337717] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/local_setup.dsv\n'}
+[16.338082] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/package.dsv\n'}
+[16.338552] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/ament_index/resource_index/packages/overlord100_controller\n'}
+[16.338869] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/cmake/overlord100_controllerConfig.cmake\n'}
+[16.339185] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/cmake/overlord100_controllerConfig-version.cmake\n'}
+[16.339615] (overlord100_controller) StdoutLine: {'line': b'-- Installing: /home/ws/src/Overlord100-controller/install/overlord100_controller/share/overlord100_controller/package.xml\n'}
+[16.343443] (overlord100_controller) CommandEnded: {'returncode': 0}
+[16.367233] (-) TimerEvent: {}
+[16.443458] (overlord100_controller) JobEnded: {'identifier': 'overlord100_controller', 'rc': 0}
+[16.444569] (-) EventReactorShutdown: {}

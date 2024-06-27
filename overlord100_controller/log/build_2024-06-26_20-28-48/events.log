@@ -1,0 +1,93 @@
+[0.000000] (-) TimerEvent: {}
+[0.001009] (overlord100_controller) JobQueued: {'identifier': 'overlord100_controller', 'dependencies': OrderedDict()}
+[0.002333] (overlord100_controller) JobStarted: {'identifier': 'overlord100_controller'}
+[0.037274] (overlord100_controller) JobProgress: {'identifier': 'overlord100_controller', 'progress': 'cmake'}
+[0.038238] (overlord100_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/ekaterina/Workspace/overlord/SoftOverlord100/Overlord100-controller/overlord100_controller', '-DCMAKE_INSTALL_PREFIX=/home/ekaterina/Workspace/overlord/SoftOverlord100/Overlord100-controller/overlord100_controller/install/overlord100_controller'], 'cwd': '/home/ekaterina/Workspace/overlord/SoftOverlord100/Overlord100-controller/overlord100_controller/build/overlord100_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ekaterina'), ('LC_TIME', 'ru_RU.UTF-8'), ('GIO_MODULE_DIR', '/home/ekaterina/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/162/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ekaterina'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ekaterina/Workspace/overlord/SoftOverlord100/Overlord100-controller'), ('TERM_PROGRAM_VERSION', '1.90.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/162/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/ekaterina/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/162/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/162/usr/share/code/code'), ('MANAGERPID', '1500'), ('SYSTEMD_EXEC_PID', '1692'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '16968'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ekaterina'), ('JOURNAL_STREAM', '8:28663'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'ekaterina'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ekaterina/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ekaterina-VivoBook:@/tmp/.ICE-unix/1642,unix/ekaterina-VivoBook:/tmp/.ICE-unix/1642'), ('GTK_EXE_PREFIX', '/snap/code/162/usr'), ('INVOCATION_ID', '43120fa20aea4d40b38729201e7973cf'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2e8baea7_811f_4336_9cc4_4aab0c58db79'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/162/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.848ZP2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7ec9bebc06.sock'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ekaterina/snap/code/162/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ekaterina/Workspace/overlord/SoftOverlord100/Overlord100-controller/overlord100_controller/build/overlord100_controller'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/ekaterina/snap/code/162/.local/share:/home/ekaterina/snap/code/162:/snap/code/162/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099228] (-) TimerEvent: {}
+[0.199798] (-) TimerEvent: {}
+[0.300640] (-) TimerEvent: {}
+[0.342954] (overlord100_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400876] (-) TimerEvent: {}
+[0.501427] (-) TimerEvent: {}
+[0.527481] (overlord100_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.552053] (overlord100_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601638] (-) TimerEvent: {}
+[0.702266] (-) TimerEvent: {}
+[0.755643] (overlord100_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.774540] (overlord100_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.775838] (overlord100_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.777002] (overlord100_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.786241] (overlord100_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.802460] (-) TimerEvent: {}
+[0.903086] (-) TimerEvent: {}
+[1.003701] (-) TimerEvent: {}
+[1.004332] (overlord100_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.026183] (overlord100_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.027181] (overlord100_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.028228] (overlord100_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.048551] (overlord100_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.103974] (-) TimerEvent: {}
+[1.204776] (-) TimerEvent: {}
+[1.305303] (-) TimerEvent: {}
+[1.405862] (-) TimerEvent: {}
+[1.432019] (overlord100_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.506086] (-) TimerEvent: {}
+[1.606800] (-) TimerEvent: {}
+[1.668849] (overlord100_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.706990] (-) TimerEvent: {}
+[1.783031] (overlord100_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.796427] (overlord100_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.807188] (-) TimerEvent: {}
+[1.818933] (overlord100_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.857486] (overlord100_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.903059] (overlord100_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.907342] (-) TimerEvent: {}
+[2.007937] (-) TimerEvent: {}
+[2.080980] (overlord100_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.087917] (overlord100_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.108147] (-) TimerEvent: {}
+[2.208818] (-) TimerEvent: {}
+[2.309508] (-) TimerEvent: {}
+[2.361834] (overlord100_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.409739] (-) TimerEvent: {}
+[2.458885] (overlord100_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.509957] (-) TimerEvent: {}
+[2.610810] (-) TimerEvent: {}
+[2.627473] (overlord100_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.655487] (overlord100_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.711132] (-) TimerEvent: {}
+[2.811794] (-) TimerEvent: {}
+[2.854176] (overlord100_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.855392] (overlord100_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.912001] (-) TimerEvent: {}
+[3.012609] (-) TimerEvent: {}
+[3.038752] (overlord100_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.041556] (overlord100_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.112834] (-) TimerEvent: {}
+[3.213479] (-) TimerEvent: {}
+[3.314101] (-) TimerEvent: {}
+[3.374049] (overlord100_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[3.414288] (-) TimerEvent: {}
+[3.492654] (overlord100_controller) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[3.493081] (overlord100_controller) StderrLine: {'line': b'  By not providing "Findoverlord100_msgs.cmake" in CMAKE_MODULE_PATH this\n'}
+[3.493205] (overlord100_controller) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[3.493338] (overlord100_controller) StderrLine: {'line': b'  "overlord100_msgs", but CMake did not find one.\n'}
+[3.493457] (overlord100_controller) StderrLine: {'line': b'\n'}
+[3.493569] (overlord100_controller) StderrLine: {'line': b'  Could not find a package configuration file provided by "overlord100_msgs"\n'}
+[3.493686] (overlord100_controller) StderrLine: {'line': b'  with any of the following names:\n'}
+[3.493802] (overlord100_controller) StderrLine: {'line': b'\n'}
+[3.493913] (overlord100_controller) StderrLine: {'line': b'    overlord100_msgsConfig.cmake\n'}
+[3.494030] (overlord100_controller) StderrLine: {'line': b'    overlord100_msgs-config.cmake\n'}
+[3.494145] (overlord100_controller) StderrLine: {'line': b'\n'}
+[3.494259] (overlord100_controller) StderrLine: {'line': b'  Add the installation prefix of "overlord100_msgs" to CMAKE_PREFIX_PATH or\n'}
+[3.494374] (overlord100_controller) StderrLine: {'line': b'  set "overlord100_msgs_DIR" to a directory containing one of the above\n'}
+[3.494490] (overlord100_controller) StderrLine: {'line': b'  files.  If "overlord100_msgs" provides a separate development package or\n'}
+[3.494604] (overlord100_controller) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[3.494778] (overlord100_controller) StderrLine: {'line': b'\n'}
+[3.494899] (overlord100_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[3.495009] (overlord100_controller) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.495146] (overlord100_controller) StdoutLine: {'line': b'See also "/home/ekaterina/Workspace/overlord/SoftOverlord100/Overlord100-controller/overlord100_controller/build/overlord100_controller/CMakeFiles/CMakeOutput.log".\n'}
+[3.513159] (overlord100_controller) CommandEnded: {'returncode': 1}
+[3.514650] (-) TimerEvent: {}
+[3.573586] (overlord100_controller) JobEnded: {'identifier': 'overlord100_controller', 'rc': 1}
+[3.584929] (-) EventReactorShutdown: {}
