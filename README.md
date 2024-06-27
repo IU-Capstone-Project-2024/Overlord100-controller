@@ -1,13 +1,15 @@
 # Overlord100-controller
 Controller submodule
 
-`DiffDriveController` is a ROS2 node designed to control a differential drive robot. 
+**Package `overlord100_controller`.**
+
+`diff_drive_controller` is a ROS2 node designed to control a differential drive robot. 
 
 ## Module structure 
 
-`cmd_vel_publisher.cpp` and `controller_subscriber.cpp` are temporary files to test the controller (`controller.cpp`).
+`cmd_vel_publisher` and `controller_subscriber` (inside `cmd_vel_publisher.cpp` and `controller_subscriber.cpp`) are temporary nodes to test the controller (inside `controller.cpp`).
 
-*cmd_vel_publisher (`cmd_vel_publisher.cpp`) sends `Twist` over the topic `cmd_vel` to the controller (`controller.cpp`). And the controller sends `WheelData` to the controller_subscriber (`controller_subscriber.cpp`) over the topic `wheels_control`*
+*cmd_vel_publisher (`cmd_vel_publisher.cpp`) sends `Twist` over the topic `cmd_vel` to the overlord100_controller (`controller.cpp`). And the controller sends `WheelData` to the controller_subscriber (`controller_subscriber.cpp`) over the topic `wheels_control`*
 
 
 ## Features
@@ -28,4 +30,8 @@ Controller submodule
 
 ### How to run the node:
 
-```ros2 run controller diff_drive_controller```
+Run in separate terminals the following commands. Do not forget to source ros2.
+
+```ros2 run overlord100_controller cmd_vel_publisher```
+```ros2 run overlord100_controller diff_drive_controller```
+```ros2 run overlord100_controller controller_subscriber```
