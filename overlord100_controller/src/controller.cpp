@@ -35,8 +35,8 @@ private:
         double linear_velocity = std::sqrt(lin_vx * lin_vx + lin_vy * lin_vy);
 
         // Compute the wheel velocities
-        double angular_right = (2 * linear_velocity + self.half_robot_base_ * angular_velocity) / (2 * wheel_radius_);
-        double angular_left = (2 * linear_velocity - self.half_robot_base_ * angular_velocity) / (2 * wheel_radius_);
+        double angular_right = (2 * linear_velocity + this->half_robot_base_ * angular_velocity) / (2 * wheel_radius_);
+        double angular_left = (2 * linear_velocity - this->half_robot_base_ * angular_velocity) / (2 * wheel_radius_);
         double angular_right_rpm = angular_right * 30 / M_PI;
         double angular_left_rpm = angular_left * 30 / M_PI;
 
@@ -68,4 +68,3 @@ int main(int argc, char *argv[])
     rclcpp::shutdown();
     return 0;
 }
-
