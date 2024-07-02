@@ -12,6 +12,7 @@ public:
         // Parameters for the differential drive robot
         this->declare_parameter<double>("robot_base_", 0.575);    // Distance between the wheels
         this->declare_parameter<double>("wheel_radius_", 0.0655); // Radius of the wheels
+        this->declare_parameter<std::string>("measurement_units_", "rpm");
 
         this->get_parameter("robot_base_", robot_base_);
         this->get_parameter("wheel_radius_", wheel_radius_);
