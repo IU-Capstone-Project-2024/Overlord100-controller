@@ -1,6 +1,0 @@
-{
-  "package_name": "overlord100_msgs",
-  "non_idl_tuples": [
-    "/home/ws/src/Overlord100-controller/overlord100_msgs:msg/WheelsData.msg"
-  ]
-}
