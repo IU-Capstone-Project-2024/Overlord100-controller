@@ -90,6 +90,7 @@
 
 using namespace std::chrono_literals;
 
+// Auxiliary node to publish velocity via the /cmd_vel topic
 class CmdVelPublisher : public rclcpp::Node {
    public:
     CmdVelPublisher() : Node("cmd_vel_publisher"), count_(0) {

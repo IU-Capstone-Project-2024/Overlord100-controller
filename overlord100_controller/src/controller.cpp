@@ -5,6 +5,14 @@
 
 #define M_PI 3.14159265358979323846 /* pi */
 
+/*
+Node implementing differential drive controller
+
+Subscribes: Twist message over /cmd_vel topic
+
+Sublishes: WheelsData message over the /wheels_control topic (velocity in rpm by
+default)
+*/
 class DiffDriveController : public rclcpp::Node {
    public:
     DiffDriveController() : Node("diff_drive_controller") {
