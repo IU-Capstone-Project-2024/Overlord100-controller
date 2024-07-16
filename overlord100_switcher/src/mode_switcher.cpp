@@ -62,8 +62,9 @@ class NavigationController : public rclcpp::Node {
   }
 
   bool isVelocityValid(const geometry_msgs::msg::Twist::SharedPtr msg) {
-    return (msg->angular.x == 0 && msg->angular.y == 0 && msg->angular.z < 3 &&
-            msg->linear.z == 0 && msg->linear.x < 3 && msg->linear.y < 3);
+    return (msg->angular.x == 0 && msg->angular.y == 0 &&
+            msg->angular.z < 100 && msg->linear.z == 0 && msg->linear.x < 100 &&
+            msg->linear.y < 100);
   }
 
   void manualControlCallback(const geometry_msgs::msg::Twist::SharedPtr msg) {
