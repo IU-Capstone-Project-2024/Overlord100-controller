@@ -104,10 +104,10 @@ class CmdVelPublisher : public rclcpp::Node {
   void publish_velocity() {
     auto message = geometry_msgs::msg::Twist();
     message.linear.x = -2.0;
-    message.linear.y = 0.0;
+    message.linear.y = 110.0;
     message.linear.z = 0.0;
     message.angular.x = 0.0;
-    message.angular.y = 0.0;
+    message.angular.y = 10.0;
     message.angular.z = 0.0;
     RCLCPP_INFO(this->get_logger(),
                 "Publishing: linear.x: '%f' angular.z: '%f'", message.linear.x,

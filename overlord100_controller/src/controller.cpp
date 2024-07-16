@@ -39,7 +39,34 @@ class DiffDriveController : public rclcpp::Node {
   }
 
  private:
+  void velocityHandler(const geometry_msgs::msg::Twist::SharedPtr msg) {
+    if (msg->angular.z > 100) {
+      msg->angular.z = 100;
+    }
+    if (msg->linear.x > 100) {
+      msg->linear.x = 100;
+    }
+    if (msg->linear.y > 100) {
+      msg->linear.y = 100;
+    }
+    if (msg->angular.z < -100) {
+      msg->angular.z = -100;
+    }
+    if (msg->linear.x < -100) {
+      msg->linear.x = -100;
+    }
+    if (msg->linear.y < -100) {
+      msg->linear.y = -100;
+    }
+    if (msg->angular.x != 0 || msg->angular.y != 0 || msg->linear.z != 0) {
+      msg->angular.x = 0;
+      msg->angular.y = 0;
+      msg->linear.z = 0;
+    }
+  }
+
   void cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg) {
+    velocityHandler(msg);
     // Extract linear and angular velocities from the message
     double lin_vx = msg->linear.x;
     double lin_vy = msg->linear.y;
