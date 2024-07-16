@@ -39,30 +39,30 @@ class DiffDriveController : public rclcpp::Node {
   }
 
  private:
+  static constexpr double UPPER_VELOCITY_LIMIT = 100.0;
+  static constexpr double LOWER_VELOCITY_LIMIT = -100.0;
+
   void velocityHandler(const geometry_msgs::msg::Twist::SharedPtr msg) {
-    if (msg->angular.z > 100) {
-      msg->angular.z = 100;
-    }
-    if (msg->linear.x > 100) {
-      msg->linear.x = 100;
-    }
-    if (msg->linear.y > 100) {
-      msg->linear.y = 100;
-    }
-    if (msg->angular.z < -100) {
-      msg->angular.z = -100;
-    }
-    if (msg->linear.x < -100) {
-      msg->linear.x = -100;
-    }
-    if (msg->linear.y < -100) {
-      msg->linear.y = -100;
-    }
-    if (msg->angular.x != 0 || msg->angular.y != 0 || msg->linear.z != 0) {
-      msg->angular.x = 0;
-      msg->angular.y = 0;
-      msg->linear.z = 0;
-    }
+    auto clampAndCheckValidValues = [&](double& vel_value) {
+      if (vel_value > UPPER_VELOCITY_LIMIT) {
+        vel_value = UPPER_VELOCITY_LIMIT;
+      } else if (vel_value < LOWER_VELOCITY_LIMIT) {
+        vel_value = LOWER_VELOCITY_LIMIT;
+      }
+    };
+    clampAndCheckValidValues(msg->linear.x);
+    clampAndCheckValidValues(msg->linear.y);
+    clampAndCheckValidValues(msg->angular.z);
+
+    auto clampAndCheckNonExistingComponents = [&](double& vel_value) {
+      if (vel_value != 0) {
+        vel_value = 0;
+      }
+    };
+
+    clampAndCheckNonExistingComponents(msg->linear.z);
+    clampAndCheckNonExistingComponents(msg->angular.x);
+    clampAndCheckNonExistingComponents(msg->angular.y);
   }
 
   void cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg) {
@@ -111,7 +111,7 @@ class DiffDriveController : public rclcpp::Node {
   double half_robot_base_;
 };
 
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<DiffDriveController>());
   rclcpp::shutdown();
