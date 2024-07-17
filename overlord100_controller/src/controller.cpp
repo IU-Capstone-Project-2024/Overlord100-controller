@@ -39,8 +39,8 @@ class DiffDriveController : public rclcpp::Node {
   }
 
  private:
-  static constexpr double UPPER_VELOCITY_LIMIT = 100.0;
-  static constexpr double LOWER_VELOCITY_LIMIT = -100.0;
+  static constexpr double UPPER_VELOCITY_LIMIT = 3.0;
+  static constexpr double LOWER_VELOCITY_LIMIT = -3.0;
 
   void velocityHandler(const geometry_msgs::msg::Twist::SharedPtr msg) {
     auto clampAndCheckValidValues = [&](double& vel_value) {

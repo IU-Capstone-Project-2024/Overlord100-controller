@@ -46,8 +46,8 @@ class NavigationController : public rclcpp::Node {
   }
 
  private:
-  static constexpr double UPPER_VELOCITY_LIMIT = 100.0;
-  static constexpr double LOWER_VELOCITY_LIMIT = -100.0;
+  static constexpr double UPPER_VELOCITY_LIMIT = 3.0;
+  static constexpr double LOWER_VELOCITY_LIMIT = -3.0;
 
   void changeModeCallback(
       const std::shared_ptr<overlord100_msgs::srv::ChangeMode::Request> request,
